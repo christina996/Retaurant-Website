@@ -1,0 +1,102 @@
+*
+{
+   box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;   //10*100/16 //ast5dm rem 3ala asas dah 10px
+    @include responsive(tab)
+    {
+        font-size:56.25%; //9*100/16
+    }
+    @include responsive(mob)
+    {
+        font-size:50%;  //8*100/16
+    }
+}
+body
+{
+    font:
+    {
+        family: 'Montserrat', sans-serif !important;
+        size: 1.6rem;
+        weight: normal;
+    }
+    background: white;
+    line-height: 1.7rem;
+}
+h1
+{
+    padding-bottom: 10px;
+            color:#353535;
+            line-height: 4rem;
+            font-size: 3rem;
+}
+h3
+{
+    font-weight: bold;
+    font-size: 2rem;
+    color:#353535;
+    padding-bottom: 10px;
+}
+h2
+{
+    font-size: 2.8rem;
+    color:#353535;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+h4
+{
+    font-size: 1rem;
+    color:#bfbdbd;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+strong
+{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+p
+{
+color:#757575;
+font-size: 1.4rem;
+font-weight:normal;
+line-height:3rem;
+}
+.container
+{
+max-width:1180px;
+margin:0  auto;
+@include responsive(tab)
+{
+max-width: 650px;
+}
+@include responsive(mob)
+{
+    max-width: 450px;
+}
+
+}
+a
+{
+    color:white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+section {
+    position: relative;
+    padding: 100px 0;
+}
+.section-title
+{
+    
+    @include animatefadeinup;
+    animation-delay: 0.1s;
+    padding-bottom: 40px;
+    text-align: center; 
+}
+.animatedFadeInUp {
+    opacity: 0;
+}

@@ -1,0 +1,56 @@
+.team    
+{
+    background: $text-light-color;
+    
+.section-title {
+    & h4 {
+       
+        letter-spacing: 1px;
+        text-transform: uppercase;
+       
+    }
+}
+.team__content
+{
+display:flex;
+justify-content: space-between;
+.card
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    
+    .card__info
+        {
+            text-align: center;
+            h3
+            {
+                margin-top:20px;
+            }
+
+            color: #454545;
+            p
+            {
+            color:#bfbdbd;
+            letter-spacing:1px;
+            text-transform: uppercase;
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            }
+        }
+}
+}
+}
+.card:nth-child(1) .card__img
+{
+animation-delay: 1s;
+}
+.card:nth-child(2) .card__img
+{
+    animation-delay: 2s;
+}
+.card:nth-child(3) .card__img
+{
+    animation-delay: 3s;
+}

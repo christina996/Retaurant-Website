@@ -1,0 +1,55 @@
+
+.card__img
+    {
+
+        position: relative;
+        cursor: pointer;
+        overflow:hidden;
+        @include animatefadeinup ;
+        max-width: 360px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+            transition: 0.5s 0.2s ease;
+        }
+        .card-hover
+        {
+            position: absolute;
+            background-color: #1c1c1c;
+            top:0;
+            bottom: 0;
+            transform: translateY(101%);
+            transition: 0.7s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            width: 100%;
+            height: 100%;
+            .card-hover__item
+            {
+               color: #ffffff; 
+               text-align: center;
+               line-height: 3rem;
+               ul
+               {
+                   @include flexwrap(center);
+                   
+               }
+               h4
+               {
+                font-size: 18px;
+               }
+            }
+        }
+        &:hover .card-hover{
+            transform: translateY(0);
+            opacity: 0.9;
+        }
+        &:hover img{
+            transform: scale(1.2,1.2);
+        }
+        
+    }
+   

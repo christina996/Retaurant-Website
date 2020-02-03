@@ -1,0 +1,58 @@
+.menu-card
+{
+    position: relative;
+    cursor: pointer;
+    overflow:hidden;
+    max-width: 461px;
+    img{
+        width: 100%;
+        height: 100%;
+        transition: 0.5s 0.2s ease;
+        object-fit: cover;
+            &:hover + .menu-card__info{
+                transform: translateY(-95%);
+                opacity: 0.8; 
+            }
+            &:hover{
+                transform: scale(1.2,1.2);
+            }
+           
+        }
+    
+       .menu-card__info
+        {
+            position: absolute;
+            width: 100%;
+            background-color: #1c1c1c;
+            transition: 0.5s 0.2s ease-in;
+           @include flexwrap(center);
+            padding: 25px 30px;
+            color: #ffffff;
+            opacity: 0;
+            &__item
+            {
+                padding-right: 40px;
+                
+                p
+                {
+                    font-size:1.2rem;
+                    color:white;
+                }
+                h3
+                {
+                    color:white;
+                }
+                
+            }
+            &__price
+            {
+                
+                
+                span{
+                    font-weight: bold;
+                    font-size:2rem;
+                }
+            }
+}
+
+}

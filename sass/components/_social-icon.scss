@@ -1,0 +1,36 @@
+.social-icon-item
+{ 
+     text-decoration: none;
+     border-radius: 100%;
+     width: 50px;
+     height: 50px;
+     line-height: 50px;
+     font-size:2rem;
+     margin:15px 5px 0 5px;
+     text-align: center;
+     @include flexwrap(center); 
+    transition: all 0.4s ease-in-out;
+    
+    &--gray
+    {
+        color: #d9d9d9;
+        background-color: #292929;
+        &:hover
+        {
+    background-color: $primary-color;
+        }
+    }
+    &--white
+    {
+        color: $primary-color;
+        background-color: #ffffff;
+        &:hover
+        {
+            color: #ffffff;
+    background-color: $primary-color;
+        }
+    }   
+    }
+
+
+

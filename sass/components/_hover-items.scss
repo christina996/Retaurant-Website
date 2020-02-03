@@ -1,0 +1,18 @@
+.items
+    {
+        li
+        {
+           
+        a
+        {
+                text-transform: uppercase;
+                &:hover
+                {
+                    color: $primary-color;
+                    -webkit-transition-duration: 0.4s;
+                    transition-duration: 0.4s;
+                }
+
+        }
+        }
+    }

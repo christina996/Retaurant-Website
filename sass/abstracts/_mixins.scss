@@ -1,0 +1,26 @@
+@mixin animatefadeinup {
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@mixin flexwrap($justify) {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: $justify;
+    align-items: center;
+}
+@mixin responsive($device-name)
+{
+    @if $device-name==tab {
+     @media (max-width:56.25em)
+     {
+         @content;
+     }
+    }
+     @if $device-name==mob  {
+        @media (max-width:37.5em)
+        {
+            @content;
+        }
+    }
+}

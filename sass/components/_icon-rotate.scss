@@ -1,0 +1,22 @@
+.rotate-icon
+{
+    @include flexwrap(center);
+    background-color: #fff;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding:8px;
+    color: #000;
+    transform: rotate(0deg);
+    transition: transform .5s ease-out;
+    &:hover
+    {
+            transform: rotate(360deg);
+            order: 1;
+    }
+    
+img
+{
+    max-width: 100%;
+}
+}

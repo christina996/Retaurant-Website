@@ -1,0 +1,84 @@
+.slider
+{
+    min-height:700px;
+    animation: animatslider 24s ease-in-out infinite;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    &__content
+    {
+        
+        position: relative;
+            display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        height: 600px;
+        width:100%;
+        color: #fff;
+        
+        h3
+        {
+            color: $text-light-color;
+            font-size: 1.4rem;
+            line-height: inherit;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        h1
+        {
+            margin: 15px 0;
+            color: #ffffff;
+            padding-bottom: 20px;
+            font-size:3rem;
+            line-height: 50px;
+        }
+       
+        
+        .slide1
+        {
+            position: absolute;
+            top:30%;
+            left:0;
+            bottom: 0;
+            right:0;
+            animation: slidetext 24s ease-in-out infinite;
+        }
+        .slide2
+        {
+            position: absolute;
+            top:30%;
+            left:0;
+            bottom: 0;
+            right:0;
+            opacity: 0;
+            animation: slidetext 24s ease-in-out infinite;
+            animation-delay: 8s;
+        }
+        .slide3
+        {
+            position: absolute;
+            top:30%;
+            left:0;
+            bottom: 0;
+            right:0;
+            opacity: 0;
+            animation: slidetext 24s ease-in-out infinite;
+            animation-delay: 16s;
+
+        }
+    
+}   
+}
+
+.slider::after
+{
+    background-color: rgba(20,20,20,0.2);
+    content: "";
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    z-index: -2;
+}
